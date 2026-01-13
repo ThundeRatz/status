@@ -4,8 +4,8 @@ export const customs = [
     name: 'K-Torze',
     states: [
       { status: 'up', message: 'Descapotando', weight: 85 },
-      { status: 'degraded', message: 'Pneu furado', weight: 10 },
-      { status: 'down', message: 'Capotou', weight: 5 },
+      { status: 'degraded', message: 'Capotou', weight: 5 },
+      { status: 'down', message: 'Se calçou com a rampa e bestou', weight: 10 },
     ],
   },
   {
@@ -13,8 +13,8 @@ export const customs = [
     name: 'Galena',
     states: [
       { status: 'up', message: 'Fazendo estrela', weight: 80 },
-      { status: 'degraded', message: 'Meio tonta', weight: 12 },
-      { status: 'down', message: 'Caiu da estrela', weight: 8 },
+      { status: 'degraded', message: 'Girando no dojo', weight: 12 },
+      { status: 'down', message: 'Não viu linha e caiu da estrela', weight: 8 },
     ],
   },
   {
