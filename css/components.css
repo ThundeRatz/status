@@ -1,0 +1,228 @@
+.header {
+  padding: 56px 0 40px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.header__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: var(--status-up-bg);
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--status-up);
+  transition: background 0.2s, color 0.2s;
+}
+
+.header__status[data-status="degraded"] {
+  background: var(--status-degraded-bg);
+  color: var(--status-degraded);
+}
+
+.header__status[data-status="down"] {
+  background: var(--status-down-bg);
+  color: var(--status-down);
+}
+
+.header__updated {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  padding-left: 4px;
+}
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.status-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-subtle);
+}
+
+.status-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status-card__name {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.status-card__message {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.status-card__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status-card__uptime {
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--status-unknown);
+  flex-shrink: 0;
+}
+
+.status-indicator[data-status="up"] {
+  background: var(--status-up);
+  box-shadow: 0 0 8px var(--status-up);
+}
+
+.status-indicator[data-status="down"] {
+  background: var(--status-down);
+  box-shadow: 0 0 8px var(--status-down);
+}
+
+.status-indicator[data-status="degraded"],
+.status-indicator[data-status="seems_down"] {
+  background: var(--status-degraded);
+  box-shadow: 0 0 8px var(--status-degraded);
+}
+
+.uptime-chart {
+  display: flex;
+  gap: 3px;
+  height: 32px;
+  margin-top: 12px;
+}
+
+.uptime-chart__bar {
+  flex: 1;
+  min-width: 6px;
+  max-width: 12px;
+  background: var(--status-up);
+  border-radius: 3px;
+  opacity: 0.8;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.uptime-chart__bar:hover {
+  opacity: 1;
+  transform: scaleY(1.15);
+}
+
+.uptime-chart__bar[data-uptime="null"] {
+  background: var(--border-subtle);
+  opacity: 0.3;
+}
+
+.uptime-chart__bar[data-uptime="degraded"] {
+  background: var(--status-degraded);
+}
+
+.uptime-chart__bar[data-uptime="down"] {
+  background: var(--status-down);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s, visibility 0.15s;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.status-card:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  padding: 32px 0 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer a {
+  color: var(--text-secondary);
+  transition: color 0.15s;
+}
+
+.footer a:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 32px 0 24px;
+  }
+
+  .header__title {
+    font-size: 1.25rem;
+  }
+
+  .status-card {
+    padding: 14px 16px;
+  }
+
+  .status-card__name {
+    font-size: 0.9rem;
+  }
+
+  .uptime-chart__bar {
+    min-width: 2px;
+    max-width: 5px;
+  }
+}
