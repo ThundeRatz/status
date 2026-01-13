@@ -82,6 +82,12 @@ button {
   padding: 0 32px;
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
