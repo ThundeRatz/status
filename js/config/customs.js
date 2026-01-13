@@ -3,8 +3,8 @@ export const customs = [
     id: 'ktorze',
     name: 'K-Torze',
     states: [
-      { status: 'up', message: 'Descapotando', weight: 85 },
-      { status: 'degraded', message: 'Capotou', weight: 5 },
+      { status: 'up', message: 'Ligando pro exército', weight: 85 },
+      { status: 'degraded', message: 'Descapotando', weight: 5 },
       { status: 'down', message: 'Se calçou com a rampa e bestou', weight: 10 },
     ],
   },
