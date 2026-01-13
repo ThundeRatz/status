@@ -14,24 +14,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
+          path: main
+
+      - uses: actions/checkout@v4
+        with:
           ref: data
+          path: data
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Fetch script from main
-        run: |
-          curl -s https://raw.githubusercontent.com/${{ github.repository }}/main/scripts/fetch_status.py -o fetch_status.py
-
       - name: Fetch UptimeRobot Status
         env:
           UPTIMEROBOT_API_KEY: ${{ secrets.UPTIMEROBOT_API_KEY }}
-          STATUS_OUTPUT: status.json
-        run: python fetch_status.py
+          STATUS_OUTPUT: data/status.json
+        run: python main/scripts/fetch_status.py
 
       - name: Commit changes
+        working-directory: data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
