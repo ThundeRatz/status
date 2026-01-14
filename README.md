@@ -1,1 +1,1 @@
-status.thunderatz.org
+https://status.thunderatz.org/
