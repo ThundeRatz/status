@@ -1,9 +1,15 @@
 const REPO = 'ThundeRatz/status'
 const BRANCH = 'data'
-const STATUS_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/status.json`
+const REMOTE_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/status.json`
+const LOCAL_URL = './data/status.json'
+
+const isLocal = () => {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+}
 
 export const fetchStatus = async () => {
-  const response = await fetch(STATUS_URL)
+  const url = isLocal() ? LOCAL_URL : REMOTE_URL
+  const response = await fetch(url)
 
   if (!response.ok) {
     throw new Error(`Failed to fetch status: ${response.status}`)

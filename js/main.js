@@ -1,7 +1,8 @@
 import { fetchStatus, getOverallStatus } from './services/statusFetcher.js'
 import { pickWeighted } from './services/randomizer.js'
-import { sites, findSiteConfig } from './config/sites.js'
+import { findSiteConfig } from './config/sites.js'
 import { customs } from './config/customs.js'
+import { getRandomFetchError } from './config/easterEggs.js'
 import { createServiceCard, createCustomCard } from './components/statusCard.js'
 import { renderHeader, renderFooter } from './components/header.js'
 
@@ -45,6 +46,17 @@ const renderCustoms = (container) => {
   container.appendChild(section)
 }
 
+const renderFetchError = (container) => {
+  const easterEgg = getRandomFetchError()
+  const banner = document.createElement('div')
+  banner.className = 'fetch-error-banner container'
+  banner.innerHTML = `
+    <span>Dados podem estar desatualizados</span>
+    <div class="tooltip tooltip--bottom">${easterEgg}</div>
+  `
+  container.appendChild(banner)
+}
+
 const renderError = (container, error) => {
   const errorDiv = document.createElement('div')
   errorDiv.className = 'error'
@@ -69,6 +81,10 @@ const init = async () => {
     const overallStatus = getOverallStatus(data.services)
 
     renderHeader(app, overallStatus, data.updated_at)
+
+    if (data.fetch_error) {
+      renderFetchError(app)
+    }
 
     const main = document.createElement('main')
     main.className = 'container'

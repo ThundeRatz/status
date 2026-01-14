@@ -165,25 +165,61 @@ def process_monitors(raw: dict) -> dict:
     }
 
 
+def load_existing_status(path: str) -> dict | None:
+    """Load existing status.json to preserve data on fetch failure."""
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+
 def main():
+    output_path = os.environ.get("STATUS_OUTPUT", os.path.join(os.path.dirname(__file__), "..", "data", "status.json"))
+
     api_key = os.environ.get("UPTIMEROBOT_API_KEY")
     if not api_key:
         raise RuntimeError("UPTIMEROBOT_API_KEY environment variable not set")
 
-    raw = fetch_monitors(api_key)
+    try:
+        raw = fetch_monitors(api_key)
 
-    if raw.get("stat") != "ok":
-        raise RuntimeError(f"API error: {raw}")
+        if raw.get("stat") != "ok":
+            raise RuntimeError(f"API error: {raw}")
 
-    processed = process_monitors(raw)
+        processed = process_monitors(raw)
+        processed["fetch_error"] = None
 
-    output_path = os.environ.get("STATUS_OUTPUT", os.path.join(os.path.dirname(__file__), "..", "data", "status.json"))
+    except Exception as e:
+        print(f"Fetch failed: {e}")
+        existing = load_existing_status(output_path)
+
+        if existing:
+            processed = existing
+            processed["fetch_error"] = {
+                "message": str(e),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+            processed["updated_at"] = existing.get("updated_at", "")
+        else:
+            processed = {
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+                "services": [],
+                "fetch_error": {
+                    "message": str(e),
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                },
+            }
+
     with open(output_path, "w") as f:
         json.dump(processed, f, indent=2)
 
-    print(f"Updated {output_path} with {len(processed['services'])} services")
-    for service in processed['services']:
-        print(f"  - {service['name']}: {service['status']} ({service['real_days']} days of data)")
+    if processed.get("fetch_error"):
+        print(f"Saved with fetch error: {processed['fetch_error']['message']}")
+    else:
+        print(f"Updated {output_path} with {len(processed['services'])} services")
+        for service in processed['services']:
+            print(f"  - {service['name']}: {service['status']} ({service['real_days']} days of data)")
 
 
 if __name__ == "__main__":

@@ -36,6 +36,14 @@ export const globalEasterEggs = {
     konamiCode: 'Voce encontrou o easter egg! Agora vai estudar',
     clickTitle5x: 'Parabens, voce quebrou mais uma coisa',
   },
+
+  fetchError: [
+    'Quis custodiet ipsos custodes?',
+    'Who watches the watchmen?',
+    'O status do status ta com problema',
+    'Ironic.',
+    'E se o uptime robot não estiver up? 😔 - Nery, Daniel - 2025',
+  ],
 }
 
 export const getRandomTitle = (status) => {
@@ -51,4 +59,9 @@ export const getRandomFooter = () => {
 export const getRandomLastUpdated = () => {
   const templates = globalEasterEggs.lastUpdated
   return templates[Math.floor(Math.random() * templates.length)]
+}
+
+export const getRandomFetchError = () => {
+  const messages = globalEasterEggs.fetchError
+  return messages[Math.floor(Math.random() * messages.length)]
 }
