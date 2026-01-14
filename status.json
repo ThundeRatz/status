@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-14T14:03:23.441395+00:00",
+  "updated_at": "2026-01-14T15:08:17.340247+00:00",
   "services": [
     {
       "name": "Drive",
@@ -219,8 +219,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "HTTP Error 502: Bad Gateway",
-    "timestamp": "2026-01-14T14:56:27.173701+00:00"
-  }
+  "fetch_error": null
 }
