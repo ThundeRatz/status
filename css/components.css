@@ -226,6 +226,16 @@
   color: var(--text-primary);
 }
 
+.footer__separator {
+  margin: 0 8px;
+  color: var(--text-muted);
+}
+
+.footer__github {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
 @media (max-width: 640px) {
   .header {
     padding: 40px 0 32px;
