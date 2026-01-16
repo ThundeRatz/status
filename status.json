@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-16T12:41:50.983473+00:00",
+  "updated_at": "2026-01-16T13:24:29.622479+00:00",
   "services": [
     {
       "name": "Drive",
@@ -223,10 +223,10 @@
       "url": "https://wiki.thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 1,
+      "real_days": 2,
       "daily_history": [
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
@@ -289,8 +289,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "The read operation timed out",
-    "timestamp": "2026-01-16T13:05:39.615929+00:00"
-  }
+  "fetch_error": null
 }
