@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-01-20T12:37:09.271525+00:00",
+  "updated_at": "2026-01-20T13:02:35.306525+00:00",
   "services": [
     {
       "name": "Drive",
       "url": "https://drive.thunderatz.org",
-      "status": "down",
-      "uptime_30d": 0.0,
+      "status": "up",
+      "uptime_30d": 4.61,
       "real_days": 7,
       "daily_history": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
         0.0,
         null,
         null,
@@ -71,9 +71,15 @@
       ],
       "incidents": [
         {
+          "type": "up",
+          "datetime": "2026-01-20T12:54:22+00:00",
+          "duration_seconds": 492,
+          "reason": "OK"
+        },
+        {
           "type": "down",
           "datetime": "2026-01-13T20:39:19+00:00",
-          "duration_seconds": 0,
+          "duration_seconds": 576903,
           "reason": "Connection Timeout"
         }
       ]
