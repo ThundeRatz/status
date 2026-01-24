@@ -1,13 +1,14 @@
 {
-  "updated_at": "2026-01-24T20:33:58.524085+00:00",
+  "updated_at": "2026-01-24T20:43:12.767825+00:00",
   "services": [
     {
       "name": "Drive",
       "url": "https://drive.thunderatz.org",
       "status": "up",
-      "uptime_30d": 39.3,
-      "real_days": 11,
+      "uptime_30d": 44.36,
+      "real_days": 12,
       "daily_history": [
+        100.0,
         100.0,
         100.0,
         100.0,
@@ -66,14 +67,13 @@
         null,
         null,
         null,
-        null,
         null
       ],
       "incidents": [
         {
           "type": "up",
           "datetime": "2026-01-20T12:54:22+00:00",
-          "duration_seconds": 373175,
+          "duration_seconds": 373729,
           "reason": "OK"
         },
         {
@@ -89,7 +89,7 @@
       "url": "https://forum.thunderatz.org/srv/status",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 11,
+      "real_days": 12,
       "daily_history": [
         100.0,
         100.0,
@@ -102,7 +102,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
