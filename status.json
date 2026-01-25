@@ -1,14 +1,15 @@
 {
-  "updated_at": "2026-01-25T20:15:52.191996+00:00",
+  "updated_at": "2026-01-25T20:41:26.665786+00:00",
   "services": [
     {
       "name": "Drive",
       "url": "https://drive.thunderatz.org",
       "status": "up",
-      "uptime_30d": 44.33,
-      "real_days": 12,
+      "uptime_30d": 48.61,
+      "real_days": 13,
       "daily_history": [
         99.65,
+        100.0,
         100.0,
         100.0,
         100.0,
@@ -66,14 +67,13 @@
         null,
         null,
         null,
-        null,
         null
       ],
       "incidents": [
         {
           "type": "up",
           "datetime": "2026-01-25T07:10:15+00:00",
-          "duration_seconds": 47135,
+          "duration_seconds": 48670,
           "reason": "OK"
         },
         {
@@ -101,7 +101,7 @@
       "url": "https://forum.thunderatz.org/srv/status",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 12,
+      "real_days": 13,
       "daily_history": [
         100.0,
         100.0,
@@ -115,7 +115,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
@@ -171,7 +171,7 @@
       "url": "https://thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 12,
+      "real_days": 13,
       "daily_history": [
         100.0,
         100.0,
@@ -185,7 +185,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
@@ -307,8 +307,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "The read operation timed out",
-    "timestamp": "2026-01-25T20:30:48.114258+00:00"
-  }
+  "fetch_error": null
 }
