@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-25T12:56:37.130305+00:00",
+  "updated_at": "2026-01-25T13:15:50.629492+00:00",
   "services": [
     {
       "name": "Drive",
@@ -73,7 +73,7 @@
         {
           "type": "up",
           "datetime": "2026-01-25T07:10:15+00:00",
-          "duration_seconds": 20781,
+          "duration_seconds": 21934,
           "reason": "OK"
         },
         {
@@ -241,7 +241,7 @@
       "url": "https://wiki.thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 10,
+      "real_days": 11,
       "daily_history": [
         100.0,
         100.0,
@@ -253,7 +253,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
