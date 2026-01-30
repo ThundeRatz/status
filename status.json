@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-30T21:58:04.615293+00:00",
+  "updated_at": "2026-01-30T22:10:25.986374+00:00",
   "services": [
     {
       "name": "Drive",
@@ -73,7 +73,7 @@
         {
           "type": "up",
           "datetime": "2026-01-30T21:55:15+00:00",
-          "duration_seconds": 168,
+          "duration_seconds": 909,
           "reason": "OK"
         },
         {
