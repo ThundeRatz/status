@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-07T00:44:56.832234+00:00",
+  "updated_at": "2026-02-07T01:16:45.567823+00:00",
   "services": [
     {
       "name": "Drive",
@@ -8,8 +8,8 @@
       "uptime_30d": 68.71,
       "real_days": 25,
       "daily_history": [
-        95.81,
-        100.0,
+        96.56,
+        99.25,
         88.83,
         100.0,
         68.72,
@@ -73,7 +73,7 @@
         {
           "type": "up",
           "datetime": "2026-02-06T04:03:17+00:00",
-          "duration_seconds": 74498,
+          "duration_seconds": 76407,
           "reason": "OK"
         },
         {
