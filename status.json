@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-02-07T20:24:17.946277+00:00",
+  "updated_at": "2026-02-07T20:40:19.281560+00:00",
   "services": [
     {
       "name": "Drive",
       "url": "https://drive.thunderatz.org",
       "status": "up",
-      "uptime_30d": 68.69,
-      "real_days": 25,
+      "uptime_30d": 69.9,
+      "real_days": 26,
       "daily_history": [
         99.64,
         95.81,
@@ -32,8 +32,8 @@
         100.0,
         99.99,
         99.99,
+        100.0,
         0.0,
-        null,
         null,
         null,
         null,
@@ -73,7 +73,7 @@
         {
           "type": "up",
           "datetime": "2026-02-07T10:39:57+00:00",
-          "duration_seconds": 35060,
+          "duration_seconds": 36020,
           "reason": "OK"
         },
         {
@@ -641,7 +641,7 @@
       "url": "https://forum.thunderatz.org/srv/status",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 25,
+      "real_days": 26,
       "daily_history": [
         100.0,
         100.0,
@@ -668,7 +668,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
@@ -711,7 +711,7 @@
       "url": "https://thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 25,
+      "real_days": 26,
       "daily_history": [
         100.0,
         100.0,
@@ -738,7 +738,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
