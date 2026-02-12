@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-02-12T20:35:52.691524+00:00",
+  "updated_at": "2026-02-12T20:52:55.996480+00:00",
   "services": [
     {
       "name": "Drive",
       "url": "https://drive.thunderatz.org",
       "status": "down",
       "uptime_30d": 0.0,
-      "real_days": 30,
+      "real_days": 31,
       "daily_history": [
         0.0,
         0.0,
@@ -38,7 +38,7 @@
         0.0,
         0.0,
         0.0,
-        null,
+        0.0,
         null,
         null,
         null,
@@ -647,7 +647,7 @@
       "url": "https://forum.thunderatz.org/srv/status",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 30,
+      "real_days": 31,
       "daily_history": [
         100.0,
         100.0,
@@ -679,7 +679,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
