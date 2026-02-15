@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-15T17:58:56.572579+00:00",
+  "updated_at": "2026-02-15T18:30:51.911994+00:00",
   "services": [
     {
       "name": "Drive",
@@ -853,8 +853,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "The read operation timed out",
-    "timestamp": "2026-02-15T18:15:33.002772+00:00"
-  }
+  "fetch_error": null
 }
