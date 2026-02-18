@@ -17,28 +17,6 @@ export const sites = [
       up: ['Se cair tb fudeu'],
     },
   },
-  {
-    id: 'drive',
-    name: 'Drive',
-    matchName: 'Drive',
-    easterEggs: {
-      down: [
-        'Quem diria...',
-        'De novo?',
-        'Surpreendente (nao)',
-        'Classico',
-        'Dia normal',
-        'Pelo menos eh consistente',
-      ],
-      up: [
-        'Aproveita enquanto dura',
-        'Historico!',
-        'Nao vai durar',
-        'Screenshot isso',
-        'Marca no calendario',
-      ],
-    },
-  },
 ]
 
 export const findSiteConfig = (serviceName) => {
