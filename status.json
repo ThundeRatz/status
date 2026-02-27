@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-02-27T20:29:23.748391+00:00",
+  "updated_at": "2026-02-27T20:45:00.326985+00:00",
   "services": [
     {
       "name": "F\u00f3rum",
       "url": "https://forum.thunderatz.org/srv/status",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 45,
+      "real_days": 46,
       "daily_history": [
         100.0,
         100.0,
@@ -53,7 +53,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
@@ -76,7 +76,7 @@
       "url": "https://thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 45,
+      "real_days": 46,
       "daily_history": [
         100.0,
         100.0,
@@ -123,7 +123,7 @@
         100.0,
         100.0,
         100.0,
-        null,
+        100.0,
         null,
         null,
         null,
