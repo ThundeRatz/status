@@ -212,5 +212,8 @@
       "incidents": []
     }
   ],
-  "fetch_error": null
+  "fetch_error": {
+    "message": "HTTP Error 502: Bad Gateway",
+    "timestamp": "2026-03-07T05:10:19.439617+00:00"
+  }
 }
