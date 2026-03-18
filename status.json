@@ -212,5 +212,8 @@
       "incidents": []
     }
   ],
-  "fetch_error": null
+  "fetch_error": {
+    "message": "HTTP Error 500: Internal Server Error",
+    "timestamp": "2026-03-18T18:45:01.694117+00:00"
+  }
 }
