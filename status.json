@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-18T15:09:57.443848+00:00",
+  "updated_at": "2026-03-18T16:09:52.043086+00:00",
   "services": [
     {
       "name": "F\u00f3rum",
@@ -212,8 +212,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "HTTP Error 500: Internal Server Error",
-    "timestamp": "2026-03-18T15:41:40.968929+00:00"
-  }
+  "fetch_error": null
 }
