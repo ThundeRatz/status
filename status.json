@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12T12:47:46.584981+00:00",
+  "updated_at": "2026-05-12T13:26:42.621802+00:00",
   "services": [
     {
       "name": "F\u00f3rum",
@@ -146,7 +146,7 @@
       "url": "https://wiki.thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 117,
+      "real_days": 118,
       "daily_history": [
         100.0,
         100.0,
