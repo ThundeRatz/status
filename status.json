@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-15T15:37:31.773507+00:00",
+  "updated_at": "2026-06-18T11:43:12.402504+00:00",
   "services": [
     {
       "name": "F\u00f3rum",
       "url": "https://forum.thunderatz.org/srv/status",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 153,
+      "real_days": 156,
       "daily_history": [
         100.0,
         100.0,
@@ -76,7 +76,7 @@
       "url": "https://thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 153,
+      "real_days": 156,
       "daily_history": [
         100.0,
         100.0,
@@ -146,7 +146,7 @@
       "url": "https://wiki.thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 152,
+      "real_days": 154,
       "daily_history": [
         100.0,
         100.0,
@@ -212,8 +212,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "The read operation timed out",
-    "timestamp": "2026-06-18T10:22:58.233600+00:00"
-  }
+  "fetch_error": null
 }
