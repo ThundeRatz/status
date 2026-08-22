@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T08:40:29.424221+00:00",
+  "updated_at": "2026-08-22T09:15:32.946846+00:00",
   "services": [
     {
       "name": "F\u00f3rum",
@@ -212,8 +212,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "The read operation timed out",
-    "timestamp": "2026-08-22T09:04:25.543127+00:00"
-  }
+  "fetch_error": null
 }
