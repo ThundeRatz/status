@@ -213,7 +213,7 @@
     }
   ],
   "fetch_error": {
-    "message": "HTTP Error 500: Internal Server Error",
-    "timestamp": "2026-08-29T20:45:29.494010+00:00"
+    "message": "The read operation timed out",
+    "timestamp": "2026-08-29T20:52:30.023538+00:00"
   }
 }
