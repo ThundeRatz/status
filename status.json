@@ -212,5 +212,8 @@
       "incidents": []
     }
   ],
-  "fetch_error": null
+  "fetch_error": {
+    "message": "The read operation timed out",
+    "timestamp": "2026-09-02T17:20:16.657307+00:00"
+  }
 }
