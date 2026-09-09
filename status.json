@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T02:57:51.095708+00:00",
+  "updated_at": "2026-09-09T13:54:45.729963+00:00",
   "services": [
     {
       "name": "F\u00f3rum",
@@ -146,7 +146,7 @@
       "url": "https://wiki.thunderatz.org/",
       "status": "up",
       "uptime_30d": 100.0,
-      "real_days": 237,
+      "real_days": 238,
       "daily_history": [
         100.0,
         100.0,
@@ -212,8 +212,5 @@
       "incidents": []
     }
   ],
-  "fetch_error": {
-    "message": "The read operation timed out",
-    "timestamp": "2026-09-09T13:48:51.879995+00:00"
-  }
+  "fetch_error": null
 }
